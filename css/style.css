@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../myfont/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../myfont/Inter-Bold.ttf") format("truetype");
+}
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../img/vector2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.container .hero {
+  font-family: "Inter-Bold", Robot, sans-serif;
+  color: #FF735C;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+.container .hero .zu {
+  align-self: flex-start;
+  width: 175px;
+  height: 66px;
+  opacity: 0;
+  -webkit-animation: opaload 1s ease-in 1s forwards;
+          animation: opaload 1s ease-in 1s forwards;
+}
+.container .hero .thehero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.container .hero .thehero .heroimg {
+  width: 40%;
+}
+.container .hero .thehero h1 {
+  font-size: 2.5em;
+  opacity: 0;
+  -webkit-animation: opaload 0.5s ease-in 1s forwards;
+          animation: opaload 0.5s ease-in 1s forwards;
+}
+.container .hero .scrool {
+  width: 40px;
+  margin-bottom: 50px;
+  align-self: flex-end;
+  -webkit-animation: bounce 1.5s 1s ease-in infinite;
+          animation: bounce 1.5s 1s ease-in infinite;
+}
+.container .hero .scrool img {
+  width: 100%;
+}
+.container .content {
+  width: 80vw;
+  height: 50em;
+  display: flex;
+  justify-content: center;
+}
+.container .content .form {
+  width: 65vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.container .content .form .tb1 {
+  font-family: "Inter-Bold", Robot, sans-serif;
+  font-size: 1em;
+  color: #385A64;
+}
+.container .content .form .tb1 .input input, .container .content .form .tb1 .input select {
+  font-size: 1em;
+  width: 345px;
+  height: 30px;
+  border-radius: 20px;
+  border: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #D9D9D9;
+  color: #385A64;
+}
+.container .content .form .tb1 .input input:focus, .container .content .form .tb1 .input select:focus {
+  outline: 2px solid #FF735C;
+}
+.container .content .form .tb1 .input select {
+  padding: 5px;
+}
+.container .content .form .tb1 .label {
+  height: 30px;
+}
+.container .content .form .tb2 {
+  font-family: "Inter-Bold", Robot, sans-serif;
+  font-size: 1em;
+  color: #385A64;
+}
+.container .content .form .tb2 .input textarea {
+  padding: 10px;
+  height: 150px;
+  width: 345px;
+  font-family: "Inter-Regular", Roboto, sans-serif;
+  font-size: 1em;
+  border-radius: 20px;
+  border: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #D9D9D9;
+  color: #385A64;
+  resize: none;
+  margin-top: 10px;
+}
+.container .content .form .tb2 .input textarea:focus {
+  outline: 2px solid #FF735C;
+}
+.container .content .form .tb2 .label {
+  height: 30px;
+}
+.container .content .form .tb2 .gender {
+  height: 30px;
+}
+.container .content .form .tb2 .gender table {
+  width: 345px;
+}
+.container .content .form .tb2 .gender table tr td input {
+  margin-right: 10px;
+}
+.container .content .form .tb2 .checkbox {
+  font-family: "Inter-Regular", Roboto, sans-serif;
+}
+.container .content .form .tb2 .checkbox table {
+  width: 345px;
+}
+.container .content .form .tb2 .checkbox table tr td {
+  width: 30%;
+}
+.container .content .form .tb2 .checkbox table tr td input {
+  margin-right: 10px;
+}
+.container .content .form .tb2 .sectombol td {
+  width: 100%;
+  display: flex;
+  align-items: space-around;
+}
+.container .content .form .tb2 .sectombol td .tombol {
+  font-family: "Inter-Bold", Robot, sans-serif;
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  border: 0;
+  margin: 18px 20px 20px 0;
+}
+.container .content .form .tb2 .sectombol td .tombol:hover {
+  cursor: pointer;
+}
+.container .content .form .tb2 .sectombol td .tombol:first-child {
+  background-color: #FF735C;
+}
+.container .content .form .tb2 .sectombol td .tombol:last-child {
+  background-color: #385A64;
+}
+.container .footer h3 {
+  font-family: "Inter-Bold", Robot, sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+@media (max-width: 900px) {
+  .container .hero .zu {
+    width: 120px;
+    height: 43px;
+  }
+  .container .hero .thehero .heroimg {
+    width: 50%;
+  }
+  .container .hero .thehero h1 {
+    font-size: 1.5em;
+  }
+  .container .hero .scrool {
+    width: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .container .hero .thehero .heroimg {
+    width: 80%;
+  }
+  .container .hero .thehero h1 {
+    font-size: 1em;
+    text-align: center;
+  }
+  .container .hero .scrool {
+    align-self: center;
+  }
+}
+@media (max-width: 760px) {
+  .container .content {
+    height: 60em;
+  }
+  .container .content .form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .container .content .form .tb1 .input input, .container .content .form .tb1 .input select {
+    width: 80vw;
+  }
+  .container .content .form .tb2 .input textarea {
+    width: 80vw;
+  }
+  .container .content .form .tb2 .gender table {
+    width: 80vw;
+  }
+  .container .content .form .tb2 .checkbox table {
+    width: 80vw;
+  }
+  .container .footer h3 {
+    font-family: "Inter-Bold", Robot, sans-serif;
+    color: white;
+    font-size: 0.5em;
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 25%, 50%, 75%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+@keyframes bounce {
+  0%, 25%, 50%, 75%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+@-webkit-keyframes opaload {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes opaload {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

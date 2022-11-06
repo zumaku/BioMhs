@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web Info Mahasiswa">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Zul Fadli Ahmad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Mahasiswa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- scroling animation. link: https://github.com/michalsnik/aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="hero">
+            <div class="thehero">
+                <img src="img/univ logo.png" alt="Zuma Univercity's Logo" class="zu">    <!-- fixed -->
+                <img src="img/vector1.jpg" alt="" class="heroimg">
+                <h1>CERITAKAN DIRIMU, MAHASISWA!</h1>
+            </div>
+            <a href="#theform" class="scrool">
+                <img src="img/scrool.png" alt="Scrool Down">
+            </a>
+        </div>
+        <div class="content">
+            <form action="" id="theform" class="form">
+                <table class="tb1">
+                    <!-- nama -->
+                    <tr class="label" data-aos="fade-right"><td><Label for="nama" >Nama</Label></td></tr>
+                    <tr class="input" data-aos="fade-right"><td><input type="text" id="nama" class="nama" autocomplete="off"></td></tr>
+                    
+                    <!-- nim -->
+                    <tr class="label" data-aos="fade-right"><td><Label for="nim">NIM</Label></td></tr>
+                    <tr class="input" data-aos="fade-right"><td><input type="number" id="nim" class="nim num" autocomplete="off"></td></tr>
+
+                    <!-- tgl lahir -->
+                    <tr class="label" data-aos="fade-right"><td><Label for="tglahir">Tgl. Lahir</Label></td></tr>
+                    <tr class="input" data-aos="fade-right"><td><input type="date" id="tglahir" class="tglahir"></td></tr>
+
+                    <!-- semester -->
+                    <tr class="label" data-aos="fade-right"><td><label for="semester">Semester</label></td></tr>
+                    <tr class="input" data-aos="fade-right"><td><select name="semester" id="semester">
+                        <option value="" for="semester">Semester 1</option>
+                        <option value="" for="semester">Semester 2</option>
+                        <option value="" for="semester">Semester 3</option>
+                        <option value="" for="semester">Semester 4</option>
+                        <option value="" for="semester">Semester 5</option>
+                        <option value="" for="semester">Semester 6</option>
+                        <option value="" for="semester">Semester 7</option>
+                        <option value="" for="semester">Semester 8</option>
+                        <option value="" for="semester">Semester 9</option>
+                        <option value="" for="semester">Semester 10</option>
+                    </select></td></tr>
+                    
+                    <!-- email -->
+                    <tr class="label" data-aos="fade-right"><td><Label for="email">Email</Label></td></tr>
+                    <tr class="input" data-aos="fade-right"><td><input type="email" id="email" class="email" autocomplete="off"></td></tr>
+                    
+                    <!-- password -->
+                    <tr class="label" data-aos="fade-right"><td><Label for="pw">Password</Label></td></tr>
+                    <tr class="input" data-aos="fade-right"><td><input type="password" id="pw" class="pw" autocomplete="off"></td></tr>
+                </table>
+
+                <table class="tb2">
+                    <!-- gender -->
+                    <tr class="label" data-aos="fade-right"><td><label>Gender</label></td></tr>
+                    <tr class="gender" data-aos="fade-right"><td>
+                        <table>
+                            <tr>
+                                <td><input type="radio" name="jk" id="lk"><label for="lk">Laki-laki</label></td>
+                                <td><input type="radio" name="jk" id="pr"><label for="pr">Perempuan</label></td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                    
+                    <!-- hobi -->
+                    <tr class="label" data-aos="fade-right"><td><label>Hobi</label></td></tr>
+                    <tr class="checkbox" data-aos="fade-right"><td>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label></td>
+                                <td><input type="checkbox" id="desain"><label for="desain">Desain</label></td>
+                                <td><input type="checkbox" id="menari"><label for="menari">Menari</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="musik"><label for="musik">Musik</label></td>
+                                <td><input type="checkbox" id="menulis"><label for="menulis">Menulis</label></td>
+                                <td><input type="checkbox" id="dll"><label for="dll">Lain-lain</label></td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                    <tr data-aos="fade-right"><td><label for="text">Cita-citamu</label></td></tr>
+                    <tr class="input"><td><textarea name="" id="text" cols="30" rows="10" data-aos="fade-right"></textarea></td></tr>
+
+                    <!-- tombol -->
+                    <tr class="sectombol" data-aos="fade-up"><td>
+                        <button class="tombol">Kirim</button>
+                        <input type="reset" class="tombol">
+                    </td></tr>
+                    
+                </table>
+            </form>
+        </div>
+
+        <div class="footer">
+            <h3>Made with &hearts; by Zul Fadli Ahmad</h3>
+        </div>
+    </div>
+
+    <!-- scroling animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
